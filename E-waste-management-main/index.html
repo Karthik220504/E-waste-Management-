@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#" id="signup_form">
+          <input type="text" placeholder="Name" required id="newName" />
+          <input type="email" placeholder="Email" required id="newMail" />
+          <input type="password" placeholder="Password" required id="newPass" />
+          <div class="select-box">
+            <label for="userType">Select User Type:</label>
+            <select id="userType" name="userType" required>
+              <option value="Consumer">Consumer</option>
+              <option value="Trader">Trader</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" required />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+
+          <input type="submit" value="Signup" id="signupForm" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#" id="login_form">
+          <input type="email" placeholder="Email" required id="mail" />
+          <input type="password" placeholder="Password" required id="pass" />
+          <a href="#">Forget Password?</a>
+          <input type="submit" value="Login" id="loginForm" />
+        </form>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="js/script.js"></script>
+</html>
